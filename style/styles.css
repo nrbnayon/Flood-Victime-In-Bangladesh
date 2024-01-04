@@ -88,6 +88,11 @@
   border: 1px solid #ccc;
   border-radius: 10px;
   background-color: rgb(226, 218, 218);
+  transition: transform 1s ease-in-out;
+  cursor: pointer;
+}
+.donate-item:hover {
+  transform: scale(1.1);
 }
 .donate-item:nth-child(2) {
   border: 2px solid blue;
@@ -127,7 +132,35 @@
   outline: none;
   border-bottom: 2px solid #ccc;
 }
+.card-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 0 15%;
+}
+.card-item {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  text-align: center;
+  padding: 10px;
+  background: rgba(220, 214, 211, 0.2);
+  box-shadow: 0 8px 12px rgba(27, 24, 24, 0.2);
+  transition: transform 0.4s ease;
+  box-sizing: border-box;
+}
+.card-item:nth-child(odd) {
+  background-color: rgba(159, 234, 240, 0.301);
+}
+.card-item:hover {
+  transform: scale(1.1);
+}
 
+.card-item i {
+  font-size: 2rem;
+  padding: 0.4rem;
+}
 /* 
 @media screen and (max-width: 768px) {
   .header-top {
